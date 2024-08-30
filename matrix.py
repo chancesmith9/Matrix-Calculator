@@ -12,12 +12,7 @@ for i in range(val):
     row = inputRow.split()
     for x in range(val):
         matrix[i, x] = row[x]
-
-def addRow(row1, row2, matrix):
-    for i in range(len(matrix)):
-        matrix[row1][i] = matrix[row1][i] + matrix[row2][i]
-    return matrix
-
+        
 def subRow(row1, row2, matrix, scale_factor=1.0):
     for i in range(len(matrix)):
         matrix[row1][i] -= scale_factor * matrix[row2][i]
